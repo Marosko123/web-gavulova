@@ -23,6 +23,16 @@ export function generateSEO({
     keywords: content.seo.keywords,
     authors: [{ name: content.personal.name }],
     creator: content.personal.name,
+    icons: {
+      icon: [
+        { url: "/images/profile/profile-64.png", sizes: "32x32", type: "image/png" },
+        { url: "/images/profile/profile-64.png", sizes: "16x16", type: "image/png" },
+      ],
+      apple: [
+        { url: "/images/profile/profile-200.png", sizes: "180x180", type: "image/png" },
+      ],
+      shortcut: "/images/profile/profile-64.png",
+    },
     openGraph: {
       type: "website",
       locale: "sk_SK",
@@ -32,7 +42,7 @@ export function generateSEO({
       siteName: content.personal.name,
       images: [
         {
-          url: image || `${siteUrl}/og-image.jpg`,
+          url: image || `${siteUrl}/og-image.png`,
           width: 1200,
           height: 630,
           alt: fullTitle,
@@ -43,7 +53,7 @@ export function generateSEO({
       card: "summary_large_image",
       title: fullTitle,
       description: description || content.seo.defaultDescription,
-      images: [image || `${siteUrl}/og-image.jpg`],
+      images: [image || `${siteUrl}/og-image.png`],
     },
     robots: {
       index: true,

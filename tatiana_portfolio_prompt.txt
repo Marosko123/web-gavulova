@@ -1,0 +1,172 @@
+You are a senior full-stack engineer + brand/UI designer. Build a blazing-fast, WOW-effect personal portfolio website for a young female Growth Marketer & Graphic Designer.
+All UI text must be in Slovak language only. Tone: fresh, confident, feminine, data-driven, friendly.
+
+Profile (use exactly):
+- Meno: Tatiana Gavulová
+- Vek: 25
+- Motto: „Od nápadu k výsledkom.“
+- Roly: Growth Marketer & Graphic Designer • Portfólio
+- CTA: REZERVOVAŤ KONZULTÁCIU (sekundárne: 30-min úvod zdarma)
+- Kalendár (embed/odkaz): https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1tfegxU-jH_Cv8wstN30nA0-45Q04bGrosn7O0nWKFOQKOdmldtPaeINFBLpLGgcfCUY3V6ndD
+- Tel.: +421 918 234 579 (klikateľné)
+- E-mail: gavulova.tatiana2000@gmail.com (klikateľné)
+- Lokalita: Žilina (osobne/remote)
+- Instagram: https://www.instagram.com/gavulova_t/
+- LinkedIn: https://www.linkedin.com/in/tatiana-gavulova-b86910319/
+- Pretlak profil: https://pretlak.com/cs/freelancers/detail/_8jaOa0pU
+- Doučma profil: https://www.doucma.sk/456325-doucovanie-na-svete-existuju-tri-druhy-ludi-ti-co-si-to-vedia-spocitat-a-ti-co-nie
+
+Tech & Quality Bar
+- Stack: Next.js 14 (App Router) + React + TypeScript + Tailwind CSS + Framer Motion.
+  Použi next/image, next/og pre dynamické OG obrázky, edge runtime kde je to možné.
+- UI kit: shadcn/ui (buttons, cards, dialog, accordion, badge), lucide-react icons.
+- Performance: Lighthouse ≥ 95 na Mobile & Desktop; LCP < 1.8s; CLS < 0.05.
+  Preload hero font; optimalizuj obrázky; lazy-load below-the-fold; font-display: swap.
+- Accessibility: WCAG 2.2 AA (focus states, aria-labels, contrast).
+- SEO: Descriptive titles, meta, canonical, sitemap, robots; JSON-LD pre Person + Service.
+- Analytics: Plausible + minimalistický cookie notice.
+- Content mgmt: Všetok text v jednom content.ts pre jednoduché úpravy (Slovensky).
+- Deployment: Vercel-ready.
+- Dizajnové obmedzenie: ŽIADNA kombinácia modrá + žltá spolu.
+- Jazyk: Len slovenský v UI.
+
+Visual Direction (WOW, feminine, modern)
+- Primary: Pink #EC4899 alebo Purple #8B5CF6 (vyber jeden ako hlavnú).
+- Accents: Mint #34D399, Electric violet #7C3AED, Soft peach #FDBA74 (striedmo).
+- Štýl: Elegantný glassmorphism + jemné neumorfické tiene; rounded-2xl; grain texture.
+- Gradients: diagonálny pink→violet (from-pink-500 via-fuchsia-500 to-violet-500).
+- Typografia: Headings „Space Grotesk“ alebo „Clash Display“, body „Manrope“ alebo „Inter“ (s diakritikou).
+- Motion: Framer Motion prechody; parallax hero; hover tilt karty; micro-sparkles na CTA; konfety po odoslaní formulára.
+- Imagery: abstraktné blob-y, grainy gradienty, glossy 3D tvary; mockupy pre case studies.
+
+Site Map & Sections (všetok text po slovensky)
+Vytvor stránky: / (Home), /portfolio, /sluzby, /pripady-studie/[slug], /o-mne, /kontakt.
+
+1) Hero (above the fold)
+- H1: „Tatiana Gavulová“
+- Subheading: „Growth Marketer & Graphic Designer“
+- Motto (badge): „Od nápadu k výsledkom.“
+- USP: „Prepájam stratégiu, dizajn a dáta. Tvorím značky a kampane, ktoré menia pozornosť na výsledky.“
+- Primary CTA: „REZERVOVAŤ KONZULTÁCIU“ (veľké, glossy)
+- Secondary CTA: „30-min úvod zdarma“ (ghost)
+- Quick contacts: Tel., E-mail, Lokalita (Žilina • osobne/remote)
+- Vizual: animovaná glass karta s gradient blobom + plávajúce iskričky
+
+2) Dôvera / „Spolupracovala som s“ (logos carousel)
+- Placeholder logá (nahraditeľné).
+- Copy: „Značky, ktorým som pomohla rásť“.
+
+3) Služby (cards s ikonami, hover-tilt)
+- Výkonnostný marketing (PPC/Meta/Google Ads): „Nastavenie, škálovanie a optimalizácia kampaní na rast konverzií.“
+- Marketingová stratégia & growth: „Roadmapa priorít, experimenty, funnel a meranie dopadu.“
+- Branding & vizuálna identita: „Logo, farby, typografia a dizajn manuál s prenosom do praxe.“
+- Grafický dizajn: „Bannery, social posty, brožúry, prezentačné materiály.“
+- Obsah & short-form video: „Reels/TikTok, motion grafika, scenár a strih.“
+- Konzultácie a školenia 1:1: „Prakticky, na vaše dáta a ciele.“
+- Každá karta: „Zistiť viac“ → /sluzby.
+
+4) Výsledky v číslach (animated counters)
+- „Kampane spustené: —“
+- „Priemerné zlepšenie CTR: —“
+- „Priemerný pokles CPA: —“
+- „Rebrandy & identity: —“
+(Ponechaj placeholdery, NEVYMÝŠĽAJ čísla.)
+
+5) Prípadové štúdie (grid + filtre)
+- Filtre: Branding / Kampane / Dizajn / Video.
+- Karta: názov, 1-vetová výzva, výsledok, tagy.
+- Detail /pripady-studie/[slug] šablóna:
+  - Kontext & ciele
+  - Insight & stratégia
+  - Riešenie (vizuály, reklamy, landingy)
+  - Výsledky (metriky / kvalitatívne dopady)
+  - Galéria (lightbox)
+  - CTA: „Chcem podobné výsledky“
+
+6) O mne (bio + foto mockup)
+- „Ahoj, som Tatiana — 25-ročná marketérka a dizajnérka zo Žiliny.
+  Verím v prepojenie dát a estetiky. Moje projekty stoja na jasnej stratégii, precíznom dizajne a rýchlom testovaní, aby sme sa z nápadu dostali k merateľným výsledkom.“
+- „Pracujem osobne v Žiline alebo remote.“
+- Badge: Empatia k značke • Dôslednosť • Tempo • Transparentnosť.
+
+7) Proces (4 kroky, timeline)
+1. Úvodná konzultácia – pochopenie cieľov a dát.
+2. Návrh stratégie – priorita quick wins, plán experimentov.
+3. Exekúcia & dizajn – kampane, vizuály, obsah.
+4. Meranie & škálovanie – report, odporúčania, zlepšenia.
+
+8) Cenník / Balíčky (cards, ribbons)
+- ŠTART – audit + návrhy (fix/na vyžiadanie).
+- RAST – mesačný growth (nastavenie + optimalizácia).
+- PRO – komplexný marketing + dizajn (dohodou).
+(Pozn.: Nenechávaj falošné ceny; CTA „Poďme to prebrať“.)
+
+9) FAQ (accordion)
+- Ako prebieha prvá konzultácia?
+- Čo ak nemáme dáta?
+- Ako rýchlo uvidíme výsledky?
+- Viete pracovať s našimi internými nástrojmi?
+- Je možné jednorazové zadanie?
+
+10) Kontakt (big CTA section)
+- Primary CTA: „REZERVOVAŤ KONZULTÁCIU“ (embed Google Appointments)
+- Sekundárne: „30-min úvod zdarma“
+- Rýchly kontakt: Tel. klikateľný, E-mail klikateľný, Lokalita.
+- Sociálne siete: Instagram, LinkedIn, Pretlak, Doučma (ikonky).
+- Formulár: meno, e-mail, firma, správa → serverless endpoint (rate-limit, honeypot).
+  Po odoslaní: micro-confetti + toast „Ozvem sa do 24h“.
+
+11) Footer
+- Krátky bio tagline, navigácia, copyright, odkazy na zásady ochrany súkromia.
+
+Components & UX Must-Haves
+- Sticky nav s blur + scroll progress bar.
+- Theme tokens: --brand, --accent, --glass-bg, --glass-border.
+- Cards: glossy/glass, 3D hover, jemný shine.
+- Marquee logos strip (pause on hover).
+- Portfolio filter s animáciou (Framer Motion layout).
+- Image lightbox (next/image + modal).
+- Case study template (ideálne MDX).
+- OG obrázky na stránku (title + gradient).
+- 404 na tému značky s CTA „Späť domov“.
+
+Integrácie
+- Embed Google Calendar Appointments (link vyššie).
+- Contact form → serverless email (napr. Resend) + fallback mailto.
+- Social previews (len odkazy).
+- WhatsApp deeplink (voliteľne).
+
+SEO & Metadata
+- Page titles/descriptions po slovensky. Canonicals.
+- JSON-LD: Person (name, jobTitle, sameAs, address: Žilina, contactPoint) a Service (marketing, branding, graphic design).
+- OG + Twitter cards. Favicon set. sitemap.xml, robots.txt.
+
+Files & Structure
+- app/ routes s metadata.
+- components/ui/ (Button, Card, Section, Badge, Container, Marquee, Tilt, Sparkles).
+- components/sections/ (Hero, Services, Results, Cases, About, Process, Pricing, FAQ, Contact).
+- content.ts (všetky texty a odkazy v SJ).
+- lib/seo.ts, lib/schema.ts.
+- public/ placeholder assets.
+- README.md s inštaláciou a úpravou obsahu.
+
+Sample Slovak Copy (predvolené; uprav v content.ts)
+- Global nav: Domov • Portfólio • Služby • Prípadové štúdie • O mne • Kontakt
+- Hero CTA small note: „Odpoviem do 24 hodín.“
+- Mini-USP pills: Dáta → Dizajn → Výsledky
+- Kontakt box:
+  „Preferujete rýchly call? Zavolajte mi na +421 918 234 579 alebo napíšte na gavulova.tatiana2000@gmail.com.“
+  „Som v Žiline, ale fungujem aj remote.“
+- Footer tagline: „Tvorím marketing a dizajn, ktoré prinášajú merateľné výsledky.“
+
+Acceptance Criteria (nesmie chýbať)
+1. Všetok text je po slovensky.
+2. Pink alebo Purple je hlavná farba; zladené akcenty; žiadna kombinácia modrá+žltá spolu.
+3. WOW first impression: hero gradient + glass, mikro-animácie, plynulé prechody.
+4. Lighthouse (mobile/desktop) ≥ 95; žiadne layout shifts; rýchle LCP.
+5. A11y: klávesová navigácia, focus ringy, alt texty, kontrast AA.
+6. SEO + JSON-LD + OG obrázky.
+7. Google Calendar embed funguje + klikateľné tel/mail.
+8. Kód čistý, typovaný, komponenty znovupoužiteľné; README.md s krokmi nasadenia.
+
+Build it now.

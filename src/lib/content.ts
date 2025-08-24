@@ -96,9 +96,9 @@ export const content = {
   // About
   about: {
     title: "O mne",
-    bio: "Ahoj, som Tatiana — 25-ročná marketérka a dizajnérka zo Žiliny. Verím v prepojenie dát a estetiky. Moje projekty stoja na jasnej stratégii, precíznom dizajne a rýchlom testovaní, aby sme sa z nápadu dostali k merateľným výsledkom.",
-    workStyle: "Pracujem osobne v Žiline alebo remote.",
-    traits: ["Empatia k značke", "Dôslednosť", "Tempo", "Transparentnosť"]
+    intro: "Ahoj, som Tatiana — 25-ročná marketérka a dizajnérka zo Žiliny. Verím v prepojenie dát a estetiky. Moje projekty stoja na jasnej stratégii, precíznom dizajne a rýchlom testovaní, aby sme sa z nápadu dostali k merateľným výsledkom.",
+    work: "Pracujem osobne v Žiline alebo remote.",
+    values: ["Empatia k značke", "Dôslednosť", "Tempo", "Transparentnosť"]
   },
 
   // Process
@@ -201,7 +201,7 @@ export const content = {
 
   // SEO
   seo: {
-    defaultTitle: "Tatiana Gavulová - Growth Marketer & Graphic Designer",
+    defaultTitle: "Tatiana Gavulová | Growth Marketing & Grafický Dizajn",
     defaultDescription: "Prepájam stratégiu, dizajn a dáta. Tvorím značky a kampane, ktoré menia pozornosť na výsledky. Žilina | Remote",
     keywords: "growth marketing, grafický dizajn, branding, PPC kampane, Meta Ads, Google Ads, vizuálna identita, Žilina"
   }

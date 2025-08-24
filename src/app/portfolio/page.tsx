@@ -1,28 +1,21 @@
-import { Metadata } from "next";
-import { generateSEO } from "@/lib/seo";
+"use client";
 
-export const metadata: Metadata = generateSEO({
-  title: "Portfólio",
-  description: "Pozrite si ukázky mojej práce v oblasti growth marketingu, brandingu a grafického dizajnu.",
-  path: "/portfolio",
-});
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function PortfolioPage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    // Redirect to main page with portfolio hash
+    router.replace('/#portfolio');
+  }, [router]);
+
   return (
-    <div className="min-h-screen pt-20">
-      <div className="container mx-auto px-4 lg:px-8 py-16">
-        <h1 className="text-4xl lg:text-6xl font-heading font-bold text-white mb-8">
-          Portfólio
-        </h1>
-        <p className="text-lg text-white/70 mb-12 max-w-2xl">
-          Ukázky projektov, na ktorých som pracovala.
-        </p>
-        
-        <div className="text-center py-20">
-          <p className="text-white/60">
-            Portfólio bude doplnené s reálnymi projektmi a case studies.
-          </p>
-        </div>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-pink-900 flex items-center justify-center">
+      <div className="text-center">
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-pink-500 mx-auto mb-4"></div>
+        <p className="text-white">Presmerovávam...</p>
       </div>
     </div>
   );

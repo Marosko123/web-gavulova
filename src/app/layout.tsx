@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/layout/navigation";
 import { Footer } from "@/components/layout/footer";
+import { Analytics } from "@/components/analytics";
 import { generateSEO } from "@/lib/seo";
 import { generatePersonSchema, generateServiceSchema } from "@/lib/schema";
 
@@ -46,6 +47,7 @@ export default function RootLayout({
         className="font-sans bg-gradient-to-br from-gray-900 via-purple-900 to-pink-900 text-white min-h-screen"
         suppressHydrationWarning={true}
       >
+        <Analytics />
         <Navigation />
         <main className="relative">
           {children}
